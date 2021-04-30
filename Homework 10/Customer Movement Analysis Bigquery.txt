@@ -1,0 +1,62 @@
+select current_m
+       ,sum(new_customer) as new_customer
+       ,sum(reactivated) as reactivated
+       ,sum(repeat) as repeat
+       ,sum(churn) as churn
+from (
+        select current_m
+            ,ifnull(case when move_status = 'New Customer' then count(move_status) end,0) new_customer    
+            ,ifnull(case when move_status = 'Reactivated' then count(move_status) end,0) reactivated 
+            ,ifnull(case when move_status = 'Repeat' then count(move_status) end,0) repeat 
+            ,-ifnull(case when move_status = 'Churn' then count(move_status) end,0) churn 
+        from (
+                select t.*,
+                    (case when cnt = 0 then 'Churn'
+                            when lag(cnt) over (partition by cust_code order by current_m) is null then 'New Customer'
+                            when lag(cnt) over (partition by cust_code order by current_m) <> 0 and cnt <> 0 then 'Repeat'
+                            when  lag(cnt) over (partition by cust_code order by current_m) = 0 and cnt <> 0 then 'Reactivated'
+                        end) as move_status
+                from (
+                        select groud.cust_code , groud.current_m  ,ifnull(real.cnt,0) as cnt
+                        from 
+                        (
+                                SELECT cust_code, last_day(DATE_ADD(current_m, INTERVAL delta MONTH)) as current_m
+                                FROM 
+                                (
+                                        SELECT 
+                                        min(last_day(PARSE_DATE('%Y%m%d', CAST(shop_date AS STRING)))) as current_m
+                                        ,cust_code
+                                        ,num_month
+                                        FROM
+                                        (   select max(last_day(PARSE_DATE('%Y%m%d', CAST(shop_date AS STRING))))  OVER (PARTITION BY 1 ) as max_date
+                                                        ,DATE_DIFF(max(last_day(PARSE_DATE('%Y%m%d', CAST(shop_date AS STRING))))  OVER (PARTITION BY 1 )
+                                                        , min(last_day(PARSE_DATE('%Y%m%d', CAST(shop_date AS STRING))))  OVER (PARTITION BY cust_code ),month) num_month
+                                                        , trans.*
+                                                from `bads-7105-308315.supermarket.transaction` AS trans
+                                        )
+                                        where 
+                                        CUST_CODE is not null
+                                        group by cust_code,num_month
+                                                                
+                                )
+                                ,UNNEST(GENERATE_ARRAY(0,num_month
+                                        )) delta
+                        ) groud
+                        left join (
+                                select last_day(PARSE_DATE('%Y%m%d', CAST(shop_date AS STRING))) as current_m 
+                                        ,CUST_CODE
+                                        ,count(cust_code) as cnt
+                                from `bads-7105-308315.supermarket.transaction`
+                                where CUST_CODE is not null
+                                group by last_day(PARSE_DATE('%Y%m%d', CAST(shop_date AS STRING)))
+                                        ,CUST_CODE
+                                ) real
+                        on groud.current_m = real.current_m
+                        and groud.cust_code = real.cust_code
+                ) t
+        )
+        group by current_m ,move_status
+)
+group by current_m
+order by current_m
+
