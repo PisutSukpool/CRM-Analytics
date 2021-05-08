@@ -20,3 +20,7 @@ Homework 08 – Campaign Response Model
 Homework 09 – A/B Testing
 
 Homework 10 – Customer Movement Analysis
+
+Homework 11 - Voice of Customer
+
+Homework 12 - Design Thinking
