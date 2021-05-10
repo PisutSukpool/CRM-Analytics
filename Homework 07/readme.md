@@ -1,2 +1,7 @@
+# Product Recommendation
 
-![image](https://user-images.githubusercontent.com/77518518/117670592-41caf280-b1d2-11eb-909a-faf6ae7ba92f.png)
+## _Form Customer Survey Data_
+
+Most Popular
+
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2007/Most_Popular.png?raw=true)
