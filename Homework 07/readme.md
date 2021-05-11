@@ -3,7 +3,11 @@
 Form Customer Survey Data
 
 ## Most Popular ##  
-
+  It's simple aggreation that recommend popular products to users.
+  _ Step _
+  - Aggregate the number of times used by products.
+  - Sort descending by total from aggregation.
+  - Select top 10 that the most popular. 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2007/Image/Most_Popular2.png?raw=true)
 
 ## Collaborative Filtering Item-Item ##
