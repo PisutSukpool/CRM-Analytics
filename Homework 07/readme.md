@@ -4,7 +4,7 @@ Form Customer Survey Data
 
 ## Most Popular ##  
   It's simple aggreation that recommend popular products to users.
-  _ Step _
+  _ Step
   - Aggregate the number of times used by products.
   - Sort descending by total from aggregation.
   - Select top 10 that the most popular. 
