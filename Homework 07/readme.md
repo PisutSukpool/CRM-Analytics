@@ -16,4 +16,5 @@ User-User
 
 Apiori
 
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2007/Image/Apiori_tabular.png?raw=true)
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2007/Image/Apiori2.png?raw=true)
