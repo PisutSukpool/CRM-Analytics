@@ -134,7 +134,7 @@ Customer Segmentation by RFM
 
 Segment Table
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM_rfm.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM_ref.png?raw=true)
 
 Segmentation Reference : https://blog.rsquaredacademy.com/customer-segmentation-using-rfm-analysis/
 
