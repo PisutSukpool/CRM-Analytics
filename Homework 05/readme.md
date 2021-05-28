@@ -97,10 +97,10 @@ Customer Movement per month
 
 | Customer Type | Description |
 | ------------- | ------------- |
-| New           | Content Cell  |
-| Repeat        | Content Cell  |
-| Reactivate    | Content Cell  |
-| Churn         | Content Cell  |
+| New           | First Transaction , 3 months disappear, then come back again  |
+| Repeat        | Previous Month and Current Month have transaction  |
+| Reactivate    | They disappeared but come back again within 3 months  |
+| Churn         | Previous Month has transaction but Current Month doesn't have transaction |
 
    Formula ->
     
