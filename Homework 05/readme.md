@@ -74,6 +74,7 @@ Average customer lifespan per month
 Customer Lifetime Value per month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CLV_per_Month.png?raw=true)
+
    Define
    
    T = Average number of transactions per month
