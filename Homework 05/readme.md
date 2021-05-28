@@ -10,6 +10,18 @@ tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CLV_
 
 No. of Customer 
 
-   Label : Formula -> { FIXED month([Shop Date]) , year([Shop Date]) : COUNTD([Cust Code])}
+   Label : Formula -> { FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
    
-   Area Chart : Row -> COUNTD([Cust Code]  , Column -> Day([Shop Date])
+   Area Chart : Row -> COUNTD([Cust Code])  , Column -> Day([Shop Date])
+
+Total Spending
+
+   Label : Formula -> {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
+   
+   Area Chart : Row -> SUM([Spend]) , Column -> Day([Shop Date])
+
+Average Order Value
+
+   Label : Formula -> {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
+   
+   Area Chart : Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
