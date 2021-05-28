@@ -132,6 +132,10 @@ Customer Segmentation by RFM
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM.png?raw=true)
 
+Segment Table
+
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM_rfm.png?raw=true)
+
 Segmentation Reference : https://blog.rsquaredacademy.com/customer-segmentation-using-rfm-analysis/
 
    Recency (R) : Formula -> Change latest date that a customer has transaction to R Score (1-5)
