@@ -152,5 +152,21 @@ Segmentation Reference : https://blog.rsquaredacademy.com/customer-segmentation-
    
                   IF ROUND(RANK_PERCENTILE([Average order value])/0.2,0) = 0 THEN 1
                   ELSE ROUND(RANK_PERCENTILE([Average order value])/0.2,0) END   
+   
+   Segment Condition :
+   
+                  IF         [R] >= 4 and [F] >= 4 and [M] >=4                                           then 'Champions'
+                  ELSEIF     [R] >= 2 and [R] <= 4 and [F] >= 3 and [F] <= 4 and [M] >= 4                then 'Loyal Customers'
+                  ELSEIF     [R] >= 3 and [F] >= 1 and [F] <= 3 and [M] >= 1 and [M] <= 3                then 'Potential Loyalist' 
+                  ELSEIF     [R] >= 4 and [F] < 2  and [M] < 2                                           then 'New Customers'
+                  ELSEIF     [R] >= 3 and [R] <= 4 and [F] < 2  and [M] < 2                              then 'Promising'
+                  ELSEIF     [R] >= 3 and [R] <= 4 and [F] >= 3 and [F] <= 4  and [M] >= 3 and [M] <= 4  then 'Need Attention'
+                  ELSEIF     [R] >= 2 and [R] <= 3 and [F] < 3  and [M] < 3                              then 'About To Sleep'
+                  ELSEIF     [R] < 3 and [F] >= 2  and [M] >= 2                                          then 'At Risk'
+                  ELSEIF     [R] < 2 and [F] >= 4  and [M] >= 4                                          then 'Can’t Lose Them'
+                  ELSEIF     [R] >= 2 and [R] <= 3 and [F] >= 2 and [F] <= 3  and [M] >= 2 and [M] <= 3  then 'Hibernating'
+                  ELSEIF     [R] < 2 and [F] < 2 and [M] < 2                                             then 'Lost'
+                  ELSE                                                                                        'Other'
+                  END
                   
 --------------------
