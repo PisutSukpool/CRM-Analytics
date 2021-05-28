@@ -12,21 +12,33 @@ Summary each months -> No. of Customer , Total Spending , Average Order Value
 --------------------
 No. of Customer 
 
-   Label : Formula -> { FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
+   Label : Formula -> 
    
-   Area Chart : Row -> COUNTD([Cust Code])  , Column -> Day([Shop Date])
+                      { FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
+   
+   Area Chart : Row -> 
+           
+                      COUNTD([Cust Code])  , Column -> Day([Shop Date])
 
 Total Spending
 
-   Label : Formula -> {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
+   Label : Formula -> 
+    
+                       {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
    
-   Area Chart : Row -> SUM([Spend]) , Column -> Day([Shop Date])
+   Area Chart : Row -> 
+   
+                       SUM([Spend]) , Column -> Day([Shop Date])
 
 Average Order Value
 
-   Label : Formula -> {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
+   Label : Formula -> Total Spending / No. of Orders
+         
+                      {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
    
-   Area Chart : Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
+   Area Chart : 
+   
+                      Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
 
 --------------------
 Average revenue per user (ARPU) per month
