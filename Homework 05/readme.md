@@ -131,4 +131,19 @@ Customer Segmentation by RFM
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM.png?raw=true)
 
+   Recency (R) : Formula -> Change latest date that a customer has transaction to R Score (1-5)
+   
+                  IF ROUND(RANK_PERCENTILE([Max Shope Date])/0.2,0) = 0 THEN 1
+                  ELSE ROUND(RANK_PERCENTILE([Max Shope Date])/0.2,0) END
+                  
+   Frequency (F) : Formula -> Change frequency that a customer come to shop and has transaction to F Score (1-5)
+   
+                  IF ROUND(RANK_PERCENTILE(COUNT([Shop Date]))/0.2,0) = 0 THEN 1
+                  ELSE ROUND(RANK_PERCENTILE(COUNT([Shop Date]))/0.2,0) END
+                  
+   Monetary (M) : Formula -> Change average order value (AOV) to M Score (1-5)
+   
+                  IF ROUND(RANK_PERCENTILE([Average order value])/0.2,0) = 0 THEN 1
+                  ELSE ROUND(RANK_PERCENTILE([Average order value])/0.2,0) END   
+                  
 --------------------
