@@ -7,7 +7,7 @@ tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CLV_
 ## Story 
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Summary_each_month.png?raw=true)
-
+- - - - 
 No. of Customer 
 
    Label : Formula -> { FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
