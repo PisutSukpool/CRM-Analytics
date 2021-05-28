@@ -32,12 +32,18 @@ Average Order Value
 Average revenue per user (ARPU) per month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ARPU_per_Month.png?raw=true)
-
+   
+   Formula -> Total Revenue / No. of Customer = SUM([Spend])/COUNTD([Cust Code])
+   
 --------------------
 Churn Rate per month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ChurnRate_per_Month.png?raw=true)
 
+   Formula ->  ((Clients at the beginning of a month - Clients at the end of a month) / Clients at the beginning of a month) x 100
+   
+               (WINDOW_SUM(COUNTD([Cust Code]),-1,-1)  -  WINDOW_SUM(COUNTD([Cust Code]),0,0))/WINDOW_SUM(COUNTD([Cust Code]),-1,-1)
+   
 --------------------
 Average customer lifespan per month
 
@@ -62,3 +68,5 @@ Spending MTD vs Last Month
 Customer Segmentation by RFM
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM.png?raw=true)
+
+--------------------
