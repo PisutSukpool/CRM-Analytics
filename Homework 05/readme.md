@@ -95,6 +95,23 @@ Customer Movement per month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CustMove_per_Month.png?raw=true)
 
+| Customer Type | Description |
+| ------------- | ------------- |
+| New           | Content Cell  |
+| Repeat        | Content Cell  |
+| Reactivate    | Content Cell  |
+| Churn         | Content Cell  |
+
+   Formula ->
+    
+             IF NOT  ISNULL(LOOKUP(ATTR( [Cust Code] ),-1)) AND NOT ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN 'Repeat'
+             ELSEIF  NOT ISNULL(LOOKUP(ATTR( [Cust Code] ),-1)) AND ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN 'Churn'
+             ELSEIF  ISNULL(LOOKUP(ATTR( [Cust Code] ),-1)) AND ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN ''
+             ELSEIF  ISNULL(LOOKUP(ATTR( [Cust Code] ),-3)) AND ISNULL(LOOKUP(ATTR( [Cust Code] ),-2)) 
+                     AND isnull(LOOKUP(ATTR( [Cust Code] ),-1)) AND NOT ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN 'New' 
+             ELSE 'Reactivate'
+             END
+
 --------------------
 Spending MTD vs Last Month
 
