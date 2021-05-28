@@ -33,7 +33,9 @@ Average revenue per user (ARPU) per month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ARPU_per_Month.png?raw=true)
    
-   Formula -> Total Revenue / No. of Customer = SUM([Spend])/COUNTD([Cust Code])
+   Formula -> Total Revenue / No. of Customer
+   
+              SUM([Spend])/COUNTD([Cust Code])
    
 --------------------
 Churn Rate per month
