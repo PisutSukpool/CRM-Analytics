@@ -12,27 +12,29 @@ Summary each months -> No. of Customer , Total Spending , Average Order Value
 --------------------
 No. of Customer 
 
-   Label : Formula -> 
+   Label : 
    
-                      { FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
+                  { FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
    
-   Area Chart : Row -> 
-           
-                      COUNTD([Cust Code])  , Column -> Day([Shop Date])
+   Area Chart : 
+   
+                 Row -> COUNTD([Cust Code])  , Column -> Day([Shop Date])
 
 Total Spending
 
-   Label : Formula -> 
-    
-                       {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
+   Label : 
    
-   Area Chart : Row -> 
+                Formula -> {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
    
-                       SUM([Spend]) , Column -> Day([Shop Date])
+   Area Chart : 
+   
+                Row -> SUM([Spend]) , Column -> Day([Shop Date])
 
 Average Order Value
 
-   Label : Formula -> Total Spending / No. of Orders
+   Formula -> Total Spending / No. of Orders
+
+   Label : 
          
                       {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
    
@@ -63,11 +65,30 @@ Average customer lifespan per month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ALT_per_Month.png?raw=true)
 
+   Formula -> 1 / Churn Rate
+   
+              1 / [Churn Rate]
+              
 --------------------
 Customer Lifetime Value per month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CLV_per_Month.png?raw=true)
-
+   Define
+   
+   T = Average number of transactions per month
+   
+   AOV = Average order value
+   
+   AGM = Average gross margin = 10 % (Assume)
+   
+   ALT = Average customer lifespan in months
+   
+   Formula -> T x AOV x AGM x ALT
+   
+              [ARPU x AGM] x [Average Customer Lifespan]
+              
+              (SUM([Spend])/COUNTD([Cust Code]) x 0.1 ) x (1 / [Churn Rate])
+              
 --------------------
 Customer Movement per month
 
