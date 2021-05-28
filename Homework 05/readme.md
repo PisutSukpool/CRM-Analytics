@@ -132,6 +132,8 @@ Customer Segmentation by RFM
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM.png?raw=true)
 
+Segmentation Reference : https://blog.rsquaredacademy.com/customer-segmentation-using-rfm-analysis/
+
    Recency (R) : Formula -> Change latest date that a customer has transaction to R Score (1-5)
    
                   IF ROUND(RANK_PERCENTILE([Max Shope Date])/0.2,0) = 0 THEN 1
