@@ -4,7 +4,7 @@
 
 tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CLV_Dashboard/Dashboard1
 
-## Story 
+## Step by Step
 
 Summary each months -> No. of Customer , Total Spending , Average Order Value
 
