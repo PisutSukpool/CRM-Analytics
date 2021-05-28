@@ -15,21 +15,21 @@ No. of Customer
 
    Label : 
    
-                  { FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
+               {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
    
    Area Chart : 
    
-                 Row -> COUNTD([Cust Code])  , Column -> Day([Shop Date])
+               Row -> COUNTD([Cust Code])  , Column -> Day([Shop Date])
 
 Total Spending
 
    Label : 
    
-                Formula -> {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
+               Formula -> {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
    
    Area Chart : 
    
-                Row -> SUM([Spend]) , Column -> Day([Shop Date])
+               Row -> SUM([Spend]) , Column -> Day([Shop Date])
 
 Average Order Value
 
@@ -37,11 +37,11 @@ Average Order Value
 
    Label : 
          
-                      {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
+               {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
    
    Area Chart : 
    
-                      Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
+               Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
 
 --------------------
 Average revenue per user (ARPU) per month
@@ -59,7 +59,7 @@ Churn Rate per month
 
    Formula ->  ((Clients at the beginning of a month - Clients at the end of a month) / Clients at the beginning of a month) x 100
    
-               (WINDOW_SUM(COUNTD([Cust Code]),-1,-1)  -  WINDOW_SUM(COUNTD([Cust Code]),0,0))/WINDOW_SUM(COUNTD([Cust Code]),-1,-1)
+              (WINDOW_SUM(COUNTD([Cust Code]),-1,-1)  -  WINDOW_SUM(COUNTD([Cust Code]),0,0))/WINDOW_SUM(COUNTD([Cust Code]),-1,-1)
    
 --------------------
 Average customer lifespan per month
