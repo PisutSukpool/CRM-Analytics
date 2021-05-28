@@ -97,7 +97,7 @@ Customer Movement per month
 
 | Customer Type | Description |
 | ------------- | ------------- |
-| New           | First Transaction , 3 months disappear, then come back again  |
+| New           | First Transaction or 3 months disappear, then come back again  |
 | Repeat        | Previous Month and Current Month have transaction  |
 | Reactivate    | They disappeared but come back again within 3 months  |
 | Churn         | Previous Month has transaction but Current Month doesn't have transaction |
@@ -117,6 +117,15 @@ Spending MTD vs Last Month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/MTDvsLM.png?raw=true)
 
+   Spending Current Month : Formula ->
+      
+                                       WINDOW_SUM(sum([Spend]),0,0)
+                                       
+
+   Spending Last Month : Formula ->
+      
+                                       WINDOW_SUM(sum([Spend]),-1,-1)        
+                                       
 --------------------
 Customer Segmentation by RFM
 
