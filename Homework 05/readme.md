@@ -25,4 +25,3 @@ Average Order Value
    Label : Formula -> {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
    
    Area Chart : Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
-f
