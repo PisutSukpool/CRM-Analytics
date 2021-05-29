@@ -10,6 +10,8 @@ Summary each months -> No. of Customer , Total Spending , Average Order Value
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Summary_each_month.png?raw=true)
 
+Objective : Explore purchasing of customers to observe the changes in each month to be greater or less in volume.
+
 --------------------
 No. of Customer 
 
