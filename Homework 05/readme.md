@@ -100,9 +100,9 @@ Customer Movement per month
 
 | Customer Type | Description |
 | ------------- | ------------- |
-| New           | First Transaction or 3 months disappear, then come back again  |
+| New           | First Transaction of user|
 | Repeat        | Previous Month and Current Month have transaction  |
-| Reactivate    | They disappeared but come back again within 3 months  |
+| Reactivate    | They disappeared but come back again |
 | Churn         | Previous Month has transaction but Current Month doesn't have transaction |
 
    Formula ->
