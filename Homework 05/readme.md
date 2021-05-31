@@ -120,7 +120,7 @@ Spending MTD vs Last Month
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/MTDvsLM_2.png?raw=true)
 
-Objective : Compare spending between current month and last month to take action product which spending in current month less than last month. this part can select dimension to change point of view
+Objective : Compare spending between current month and last month to take action product which spending in current month less than last month. this part can select dimension to change point of view.
 
    Spending Current Month : Formula ->
       
@@ -135,6 +135,8 @@ Objective : Compare spending between current month and last month to take action
 Customer Segmentation by RFM
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM_2.png?raw=true)
+
+Objective : Choose customer to recommend product that spending in current month less than last month.
 
 Segment Table
 
