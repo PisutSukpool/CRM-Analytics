@@ -8,7 +8,7 @@ tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CLV_
 
 Summary each months -> No. of Customer , Total Spending , Average Order Value
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Summary_each_month.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Summary_each_month_2.png?raw=true)
 
 Objective : Explore purchasing of customers to observe the changes in each month to be greater or less in volume.
 
@@ -96,7 +96,7 @@ Customer Lifetime Value per month
 --------------------
 Customer Movement per month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CustMove_per_Month.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CustMove_per_Month_2.png?raw=true)
 
 | Customer Type | Description |
 | ------------- | ------------- |
@@ -118,7 +118,7 @@ Customer Movement per month
 --------------------
 Spending MTD vs Last Month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/MTDvsLM.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/MTDvsLM_2.png?raw=true)
 
    Spending Current Month : Formula ->
       
@@ -132,7 +132,7 @@ Spending MTD vs Last Month
 --------------------
 Customer Segmentation by RFM
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM_2.png?raw=true)
 
 Segment Table
 
