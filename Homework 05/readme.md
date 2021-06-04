@@ -124,20 +124,19 @@ Customer Movement per month
 
 | Customer Type | Description |
 | ------------- | ------------- |
-| New           | First Transaction of user|
-| Repeat        | Previous Month and Current Month have transaction  |
-| Reactivate    | They disappeared but come back again |
-| Churn         | Previous Month has transaction but Current Month doesn't have transaction |
+| New           | First transaction of user|
+| Repeat        | Previous month has transaction and within 3 months there is still transaction |
+| Reactivate    | Previous month has transaction and there is information after 3 months. |
+| Churn         | Previous month has transaction but it doesn't have transaction for 3 months |
 
    Formula ->
-    
-             IF NOT  ISNULL(LOOKUP(ATTR( [Cust Code] ),-1)) AND NOT ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN 'Repeat'
-             ELSEIF  NOT ISNULL(LOOKUP(ATTR( [Cust Code] ),-1)) AND ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN 'Churn'
-             ELSEIF  ISNULL(LOOKUP(ATTR( [Cust Code] ),-1)) AND ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN ''
-             ELSEIF  ISNULL(LOOKUP(ATTR( [Cust Code] ),-3)) AND ISNULL(LOOKUP(ATTR( [Cust Code] ),-2)) 
-                     AND isnull(LOOKUP(ATTR( [Cust Code] ),-1)) AND NOT ISNULL(LOOKUP(ATTR( [Cust Code] ),0)) THEN 'New' 
-             ELSE 'Reactivate'
-             END
+             
+             New = {FIXED [Month Year]        : AVG([New Cnt])}    
+             Repeat = {FIXED [Month Year]     : AVG([Repeat Cnt])}    
+             Reactivate = {FIXED [Month Year] : AVG([Reactivated Cnt])}
+             Churn = {FIXED [Month Year]      : -AVG([Churn Cnt])}
+             
+             SUM([New]) , SUM([Repeat]) , SUM([Reactivate]) , SUM([Churn])
 
 --------------------
 Spending MTD vs Last Month
