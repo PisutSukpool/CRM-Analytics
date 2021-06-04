@@ -1,6 +1,6 @@
 # Customer Lifetime Value Dashboard
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Main_2.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Dashboard.png?raw=true)
 
 tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CustomerLifetimeValueDashboard_v2/CustomerLifetimeValue
 
@@ -8,7 +8,7 @@ tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/Cust
 
 Summary each months -> No. of Customer , Total Spending , Average Order Value
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Dashboard.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ByMonth.png?raw=true)
 
 Objective : Explore purchasing of customers to observe the changes in each month to be greater or less in volume.
 
