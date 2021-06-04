@@ -19,6 +19,7 @@ tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/Cust
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/z_prep_agg_dataset_6.png?raw=true)
 
 
+## Create Dashboard
 Summary each months -> No. of Customer , Total Spending , Average Order Value
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ByMonth.png?raw=true)
