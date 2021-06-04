@@ -30,7 +30,7 @@ Prepare on Bigquery
 
 
 ## Create Dashboard
-Summary each months -> No. of Customer , Total Spending , Average Order Value
+Summary each months -> No. of Customer , No. of Transaction , Total Spending , Average Order Value
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ByMonth.png?raw=true)
 
