@@ -8,7 +8,7 @@ tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CLV_
 
 Summary each months -> No. of Customer , Total Spending , Average Order Value
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Summary_each_month_2.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/Summary_each_month_2.png?raw=true)
 
 Objective : Explore purchasing of customers to observe the changes in each month to be greater or less in volume.
 
@@ -48,7 +48,7 @@ Average Order Value
 --------------------
 Average revenue per user (ARPU) per month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ARPU_per_Month.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/ARPU_per_Month.png?raw=true)
    
    Formula -> Total Revenue / No. of Customer
    
@@ -57,7 +57,7 @@ Average revenue per user (ARPU) per month
 --------------------
 Churn Rate per month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ChurnRate_per_Month.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/ChurnRate_per_Month.png?raw=true)
 
    Formula ->  ((Clients at the beginning of a month - Clients at the end of a month) / Clients at the beginning of a month) x 100
    
@@ -66,7 +66,7 @@ Churn Rate per month
 --------------------
 Average customer lifespan per month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ALT_per_Month.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/ALT_per_Month.png?raw=true)
 
    Formula -> 1 / Churn Rate
    
@@ -75,7 +75,7 @@ Average customer lifespan per month
 --------------------
 Customer Lifetime Value per month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CLV_per_Month.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/CLV_per_Month.png?raw=true)
 
    Define
    
@@ -96,7 +96,7 @@ Customer Lifetime Value per month
 --------------------
 Customer Movement per month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CustMove_per_Month_2.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/CustMove_per_Month_2.png?raw=true)
 
 | Customer Type | Description |
 | ------------- | ------------- |
@@ -118,7 +118,7 @@ Customer Movement per month
 --------------------
 Spending MTD vs Last Month
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/MTDvsLM_2.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/MTDvsLM_2.png?raw=true)
 
 Objective : Compare spending between current month and last month to take action product which spending in current month less than last month. this part can select dimension to change point of view.
 
@@ -134,13 +134,13 @@ Objective : Compare spending between current month and last month to take action
 --------------------
 Customer Segmentation by RFM
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM_2.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/RFM_2.png?raw=true)
 
 Objective : Choose customer to recommend product that spending in current month less than last month.
 
 Segment Table
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/RFM_ref.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Old_Version/RFM_ref.png?raw=true)
 
 Segmentation Reference : https://blog.rsquaredacademy.com/customer-segmentation-using-rfm-analysis/
 
