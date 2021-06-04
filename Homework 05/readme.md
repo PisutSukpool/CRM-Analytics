@@ -82,8 +82,9 @@ Churn Rate per month
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ChurnRate.png?raw=true)
 
    Formula ->  ((Clients at the beginning of a month - Clients at the end of a month) / Clients at the beginning of a month) x 100
-   
-              (WINDOW_SUM(COUNTD([Cust Code]),-1,-1)  -  WINDOW_SUM(COUNTD([Cust Code]),0,0))/WINDOW_SUM(COUNTD([Cust Code]),-1,-1)
+         
+              Row -> AVG(Churn Rate)     
+              Column -> (DATEPART('year', [Shop Date])*100 + DATEPART('month', [Shop Date]))
    
 --------------------
 Average customer lifespan per month
@@ -92,7 +93,8 @@ Average customer lifespan per month
 
    Formula -> 1 / Churn Rate
    
-              1 / [Churn Rate]
+              Row -> AVG(ALT)     
+              Column -> (DATEPART('year', [Shop Date])*100 + DATEPART('month', [Shop Date]))
               
 --------------------
 Customer Lifetime Value per month
@@ -111,9 +113,9 @@ Customer Lifetime Value per month
    
    Formula -> T x AOV x AGM x ALT
    
-              [ARPU x AGM] x [Average Customer Lifespan]
+              [Average Revenue per User] x [AGM] x [Average Customer Lifespan]
               
-              (SUM([Spend])/COUNTD([Cust Code]) x 0.1 ) x (1 / [Churn Rate])
+              SUM([Spend])/COUNTD([Cust Code]) x 0.1 x AVG([ALT])
               
 --------------------
 Customer Movement per month
