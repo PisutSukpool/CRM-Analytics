@@ -128,7 +128,7 @@ Customer Movement per month
 | ------------- | ------------- |
 | New           | First transaction of user|
 | Repeat        | Previous month has transaction and within 3 months there is still transaction |
-| Reactivate    | Previous month has transaction and there is information after 3 months. |
+| Reactivate    | Previous month has transaction and there is transaction after 3 months. |
 | Churn         | Previous month has transaction but it doesn't have transaction for 3 months |
 
    Formula ->
