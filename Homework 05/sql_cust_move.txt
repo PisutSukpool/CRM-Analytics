@@ -1,4 +1,4 @@
-CREATE TABLE `bads-7105-308315.supermarket.CLV_CUSTOMER_MOVEMENT` AS
+CREATE TABLE `bads-7105-308315.supermarket.CLV_CUSTOMER_MOVEMENT_2` AS
 SELECT MONTH_YEAR,
        SUM(COALESCE(NEW_CNT,0)) NEW_CNT,
        SUM(COALESCE(REPEAT_CNT,0)) REPEAT_CNT,
@@ -16,8 +16,8 @@ SELECT MONTH_YEAR,
                         SELECT 
                             CUST_CODE,TRAN_DATE,FIRST_TIME,LAG_TIME,LEAD_TIME,
                             CASE WHEN TRAN_DATE = FIRST_TIME THEN 'NEW'
-                                WHEN DATE_DIFF(TRAN_DATE,LAG_TIME,MONTH) < 3 THEN 'REPEAT'
-                                WHEN DATE_DIFF(TRAN_DATE,LAG_TIME,MONTH) >= 3 THEN 'REACTIVATED'
+                                WHEN DATE_DIFF(TRAN_DATE,LAG_TIME,MONTH) <= 3 THEN 'REPEAT'
+                                WHEN DATE_DIFF(TRAN_DATE,LAG_TIME,MONTH) > 3 THEN 'REACTIVATED'
                             END AS CUST_TYPE
                         FROM (             
                                 SELECT
@@ -28,14 +28,14 @@ SELECT MONTH_YEAR,
                                 FROM (
                                         select distinct DATE_TRUNC(parse_date('%Y%m%d', CAST(SHOP_DATE AS STRING)),MONTH) AS TRAN_DATE,CUST_CODE
                                         FROM `bads-7105-308315.supermarket.transaction`
-                                        WHERE CUST_CODE IS NOT NULL --and CUST_CODE = 'CUST0000002637'
+                                        WHERE CUST_CODE IS NOT NULL 
                                     )
 
                             )
                         union all 
                                 SELECT 
                                     CUST_CODE,DATE_ADD(TRAN_DATE,INTERVAL 3 MONTH) TRAN_DATE,FIRST_TIME,LAG_TIME,LEAD_TIME,
-                                    CASE WHEN DATE_DIFF(LEAD_TIME,TRAN_DATE,MONTH) >= 3  THEN 'CHURN' END AS CUST_TYPE
+                                    CASE WHEN DATE_DIFF(LEAD_TIME,TRAN_DATE,MONTH) > 3  THEN 'CHURN' END AS CUST_TYPE
                                 FROM (             
                                         SELECT
                                             CUST_CODE,TRAN_DATE,
@@ -45,15 +45,16 @@ SELECT MONTH_YEAR,
                                         FROM (
                                                 select distinct DATE_TRUNC(parse_date('%Y%m%d', CAST(SHOP_DATE AS STRING)),MONTH) AS TRAN_DATE,CUST_CODE
                                                 FROM `bads-7105-308315.supermarket.transaction`
-                                                WHERE CUST_CODE IS NOT NULL --and CUST_CODE = 'CUST0000002637'
+                                                WHERE CUST_CODE IS NOT NULL 
                                             )
 
                             )
-                                where  CASE WHEN DATE_DIFF(LEAD_TIME,TRAN_DATE,MONTH) >= 3  THEN 'CHURN'END  = 'CHURN'
+                                where  CASE WHEN DATE_DIFF(LEAD_TIME,TRAN_DATE,MONTH) > 3  THEN 'CHURN'END  = 'CHURN'
+                   
                             )
                 GROUP BY MONTH_YEAR,
-                        CUST_TYPE
-                        )
+                        CUST_TYPE      
+                        )           
                     )
 GROUP BY MONTH_YEAR
-ORDER BY MONTH_YEAR  
+ORDER BY MONTH_YEAR        
