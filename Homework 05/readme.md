@@ -22,6 +22,10 @@ Prepare on Bigquery
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/z_prep_agg_dataset_6.png?raw=true)
 
+2. Churn Rate & Average Customer Lifespan
+
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/z_prep_agg_dataset_7.png?raw=true)
+
 
 ## Create Dashboard
 Summary each months -> No. of Customer , Total Spending , Average Order Value
