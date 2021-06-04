@@ -1,0 +1,18 @@
+create table `bads-7105-308315.supermarket.CLV_SUMMARY` as
+SELECT trx.*,
+       cm.MONTH_YEAR,
+       cm.NEW_CNT,
+       cm.REPEAT_CNT,
+       cm.REACTIVATED_CNT,
+       cm.CHURN_CNT,
+       cca.TOTAL_CUST_MONTH,
+       cca.NO_CHURN_END,
+       cca.NO_CUST_START,
+       cca.CHURN_RATE,
+       cca.ALT 
+FROM `bads-7105-308315.supermarket.transaction` trx
+inner join `bads-7105-308315.supermarket.CLV_CUSTOMER_MOVEMENT` cm
+on DATE_TRUNC(parse_date('%Y%m%d', CAST(trx.SHOP_DATE AS STRING)),MONTH) = cm.MONTH_YEAR
+
+inner join `bads-7105-308315.supermarket.CLV_CHURN_ALT` cca
+on DATE_TRUNC(parse_date('%Y%m%d', CAST(trx.SHOP_DATE AS STRING)),MONTH) = cca.MONTH_YEAR
