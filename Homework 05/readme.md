@@ -41,7 +41,7 @@ No. of Customer
    
                {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
    
-   Area Chart : 
+   Line Chart : 
    
                Row -> COUNTD([Cust Code])  , Column -> Day([Shop Date])
 
@@ -51,7 +51,7 @@ Total Spending
    
                Formula -> {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
    
-   Area Chart : 
+   Line Chart : 
    
                Row -> SUM([Spend]) , Column -> Day([Shop Date])
 
@@ -63,7 +63,7 @@ Average Order Value
          
                {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
    
-   Area Chart : 
+   Line Chart : 
    
                Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
 
