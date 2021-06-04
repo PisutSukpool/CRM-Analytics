@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/Main_2.png?raw=true)
 
-tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CLV_Dashboard/Dashboard1
+tableau public link -> https://public.tableau.com/app/profile/pisut5343/viz/CustomerLifetimeValueDashboard_v2/CustomerLifetimeValue
 
 ## Step by Step
 
