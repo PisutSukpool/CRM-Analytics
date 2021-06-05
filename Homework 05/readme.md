@@ -20,7 +20,7 @@ Prepare on Bigquery
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/z_prep_agg_dataset_4_2.png?raw=true)
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/z_prep_agg_dataset_6.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/z_prep_agg_dataset_6_2.png?raw=true)
 
 2. Churn Rate & Average Customer Lifespan
 
