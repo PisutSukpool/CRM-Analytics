@@ -51,7 +51,8 @@ Total Spending
 
    Label : 
    
-               Formula -> {FIXED  MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend]) }
+               Formula -> {FIXED MONTH([Shop Date]),YEAR([Shop Date]) 
+                            : SUM(IF ISNULL([Cust Code]) THEN 0 ELSE [Spend] END)}
    
    Line Chart : 
    
@@ -63,7 +64,10 @@ Average Order Value
 
    Label : 
          
-               {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : SUM([Spend])/COUNTD([Basket Id])}
+               {FIXED MONTH([Shop Date]),YEAR([Shop Date]) 
+                  : SUM(IF NOT ISNULL([Cust Code]) THEN [Spend] ELSE 0 END)/
+                    COUNTD(IF NOT ISNULL([Cust Code]) then [Basket Id] end)
+               }
    
    Line Chart : 
    
