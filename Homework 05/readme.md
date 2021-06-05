@@ -72,7 +72,7 @@ Average Order Value
                Row -> SUM([Spend])/COUNTD([Basket Id]) , Column -> Day([Shop Date])
 
 --------------------
-Average revenue per user (ARPU) per month
+Average revenue per user (ARPU)
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ARPU.png?raw=true)
    
@@ -81,7 +81,7 @@ Average revenue per user (ARPU) per month
               SUM([Spend])/COUNTD([Cust Code])
    
 --------------------
-Churn Rate per month
+Churn Rate
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ChurnRate.png?raw=true)
 
@@ -91,7 +91,7 @@ Churn Rate per month
               Column -> (DATEPART('year', [Shop Date])*100 + DATEPART('month', [Shop Date]))
    
 --------------------
-Average customer lifespan per month
+Average customer lifespan
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ALT.png?raw=true)
 
@@ -101,7 +101,7 @@ Average customer lifespan per month
               Column -> (DATEPART('year', [Shop Date])*100 + DATEPART('month', [Shop Date]))
               
 --------------------
-Customer Lifetime Value per month
+Customer Lifetime Value
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CLV.png?raw=true)
 
@@ -122,7 +122,7 @@ Customer Lifetime Value per month
               SUM([Spend])/COUNTD([Cust Code]) x 0.1 x AVG([ALT])
               
 --------------------
-Customer Movement per month
+Customer Movement
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/CustMove.png?raw=true)
 
