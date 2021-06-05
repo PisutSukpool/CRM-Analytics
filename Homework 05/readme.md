@@ -39,7 +39,7 @@ No. of Customer
 
    Label : 
    
-               {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
+               Formula -> {FIXED MONTH([Shop Date]) , YEAR([Shop Date]) : COUNTD([Cust Code])}
    
    Line Chart : 
    
@@ -62,10 +62,10 @@ Average Order Value
 
    Label : 
          
-               {FIXED MONTH([Shop Date]),YEAR([Shop Date]) 
-                  : SUM(IF NOT ISNULL([Cust Code]) THEN [Spend] ELSE 0 END)/
-                    COUNTD(IF NOT ISNULL([Cust Code]) then [Basket Id] end)
-               }
+             Formula ->  {FIXED MONTH([Shop Date]),YEAR([Shop Date]) 
+                              : SUM(IF NOT ISNULL([Cust Code]) THEN [Spend] ELSE 0 END)/
+                                COUNTD(IF NOT ISNULL([Cust Code]) then [Basket Id] end)
+                          }
    
    Line Chart : 
    
