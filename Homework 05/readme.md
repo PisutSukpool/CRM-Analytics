@@ -85,7 +85,7 @@ Churn Rate
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2005/ChurnRate.png?raw=true)
 
-   Formula ->  (No. customer churn end of period / No. customer at the beginning of a period) x 100
+   Formula ->  (No. customer churn at then end of period / No. customer at the beginning of a period) x 100
          
               Row -> AVG(Churn Rate)     
               Column -> (DATEPART('year', [Shop Date])*100 + DATEPART('month', [Shop Date]))
