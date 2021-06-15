@@ -18,6 +18,10 @@
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2010/ChurnRate3Months.png?raw=true)
 
+(No. customer churn at the ending of period / No. customer at the beginning of a period) x 100
+
 ## -Average Lifespan
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2010/ALT3months.png?raw=true)
+
+1/Churn Rate
