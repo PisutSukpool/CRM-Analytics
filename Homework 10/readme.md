@@ -13,4 +13,4 @@
 
 ## -Average Lifespan
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2010/ALT3months.png.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2010/ALT3months.png?raw=true)
