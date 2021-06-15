@@ -1,13 +1,16 @@
 
 # Customer Movement Analysis
 
+
+## -Customer Movement
+
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2010/CustomerMovement3Months.png?raw=true)
 
 
-## Step by Step
+## -Churn Rate
 
-## Aggregate Supermarket Dataset
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2010/ChurnRate3Months.png?raw=true)
 
-Prepare on Bigquery
+## -Average Lifespan
 
-1.Customer Movement
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2010/ALT3Months.png?raw=true)
