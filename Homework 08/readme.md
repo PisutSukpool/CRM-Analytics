@@ -83,3 +83,5 @@ Result
 
 Conclusion
 
+   From the result , it measure by AUC. The best model performance is XGBoost model with oversampler. It gets 0.817286 from AUC.
+   This experiment can be seen that proper feature selection and resampling can improve the model performance.
