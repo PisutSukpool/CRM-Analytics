@@ -24,3 +24,18 @@
 ## Clustering Model
 
      - It's K-Means clustering model. It is selected number of clusters by Elbow and Silhouette method
+     
+     
+     - Select K = 6
+     
+## Feature Importance
+
+
+## Model Result
+
+## Distribution of Feature each cluster
+
+## Interpretation
+
+
+
