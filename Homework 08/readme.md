@@ -27,6 +27,16 @@ Feature Engineering
     3. Transaction weekday or weekend
     
     4. Time to event in each features
+ 
+Feature Selection
+
+    1. AdaBoostClassifier
+    
+    2. ExtraTreesClassifier
+    
+    3. GradientBoostingClassifier
+    
+    4. RandomForestClassifier
     
 Re-Sampling
 
@@ -53,6 +63,23 @@ Models
    2. XGBoost
 
 Result
+
+ - Logistic Regression all features
+ 
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2008/logreg_eval_all.png?raw=true)
+
+ - XGBoost all features
+
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2008/xgboost_eval_all.png?raw=true)
+
+ - Logistic Regression feature selection
+ 
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2008/logreg_eval_filter.png?raw=true)
+
+ - XGBoost all features feature selection
+
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2008/xgboost_eval_filter.png?raw=true)
+
 
 Conclusion
 
