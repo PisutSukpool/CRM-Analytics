@@ -32,4 +32,8 @@ Re-Sampling
 
 Models
 
+   1. Logistic Regression
+
+   2. XGBoost
+
 Result
