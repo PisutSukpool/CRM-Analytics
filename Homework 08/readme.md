@@ -17,10 +17,15 @@ Number of Response
 ## Implementation
 
 Feature Engineering
+
    create feature that maybe relate to model about 60 features
+   
     1. Customer Movement viz Repeat and Reactivated each active customer periods (1 month , 2 months , 3 months)
+    
     2. RFM -> (recency , frequency , monetary)
+    
     3. Transaction weekday or weekend
+    
     4. Time to event in each features
     
 Re-Sampling
