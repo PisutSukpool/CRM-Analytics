@@ -30,6 +30,22 @@ Feature Engineering
     
 Re-Sampling
 
+    1. Under-Sampling
+    
+    2. Over-Sampling
+    
+    3. SMOTE
+    
+    4. SMOTETomek
+    
+    5. SMOTEENN
+    
+    6. BorderlineSMOTE
+    
+    7. SVMSMOTE
+    
+    8. ADASYN
+    
 Models
 
    1. Logistic Regression
