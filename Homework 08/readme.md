@@ -18,7 +18,7 @@ Number of Response
 
 Feature Engineering
 
-   create feature that maybe relate to model about 60 features
+   create feature that maybe relate to model more than 50 features
    
     1. Customer Movement viz Repeat and Reactivated in each active customer periods (1 month , 2 months , 3 months)
     
