@@ -20,7 +20,7 @@ Feature Engineering
 
    create feature that maybe relate to model about 60 features
    
-    1. Customer Movement viz Repeat and Reactivated each active customer periods (1 month , 2 months , 3 months)
+    1. Customer Movement viz Repeat and Reactivated in each active customer periods (1 month , 2 months , 3 months)
     
     2. RFM -> (recency , frequency , monetary)
     
@@ -37,3 +37,6 @@ Models
    2. XGBoost
 
 Result
+
+Conclusion
+
