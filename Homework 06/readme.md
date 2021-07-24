@@ -6,7 +6,7 @@
 ## Feature Engineering
      1. Reactivated	      -> number of customer who churn but come to visit again.
      
-     2. Repeat	           -> number of customer who come to visit at least every 3 months.
+     2. Repeat	          -> number of customer who come to visit at least every 3 months.
      
      3. Recency	      -> latest date when come to visit.
      
