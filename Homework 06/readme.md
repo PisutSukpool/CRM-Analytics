@@ -43,5 +43,17 @@
 
 ## Interpretation
 
+Cluster
 
+     0:Low spend , Churn Customer
+
+     1:Pretty low spend , Non-Active Customer
+
+     2:High spend , Active Customer
+
+     3:Pretty high spend , Active Customer
+
+     4:Small to Medium Basket size , Non-Active Customer
+
+     5:Big Basket size , Churn Customer
 
