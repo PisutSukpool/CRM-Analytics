@@ -25,15 +25,21 @@
 
      - It's K-Means clustering model. It is selected number of clusters by Elbow and Silhouette method
      
+   ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2006/Select_K.png?raw=true)
      
      - Select K = 6
      
 ## Feature Importance
 
+   ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2006/feature_importance.png?raw=true)
 
 ## Model Result
 
+   ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2006/result_model.png?raw=true)
+
 ## Distribution of Feature each cluster
+
+   ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2006/distribution_feature.png?raw=true)
 
 ## Interpretation
 
