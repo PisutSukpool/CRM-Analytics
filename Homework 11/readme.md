@@ -34,7 +34,7 @@ Topic 4
 
 ## Result
 
-    - Top 15 proportion of words each topic.
+   - Top 15 proportion of words each topic.
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2011/heatmap_prop_word_topic.png?raw=true)
 
