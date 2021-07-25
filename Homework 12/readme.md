@@ -1,5 +1,7 @@
 # Design Thinking
 
+## Product -> "Tur" Application
+
 ## 1. Empathize
 
 ![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2012/Empathize.png?raw=true)
@@ -18,4 +20,4 @@
 
 ## 5. Test
 
-![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2012/Empathize.png?raw=true)
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2012/Test.png?raw=true)
