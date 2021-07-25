@@ -14,6 +14,7 @@
 
 ## Topic Modeling by LDA (Latent Dirichlet Allocation)
 
+![alt text](https://github.com/PisutSukpool/BADS7105-CRM-analytics-and-intelligence/blob/main/Homework%2011/topic1.png?raw=true)
 
 ## Result
 
